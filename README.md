@@ -2,6 +2,8 @@
 
 Download and manage zig compilers.
 
+NOTE: This is my fork of zigup. I have forked it to change the default install location because I don't wanna keep passing flags to it. I have also added some minor quality of life improvements.
+
 # Commands
 
 ```
