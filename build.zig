@@ -27,6 +27,7 @@ pub fn build(b: *Builder) !void {
 
     var github_release_step = b.step("github-release", "Build the github-release binaries");
     try addGithubReleaseExe(b, github_release_step, ziget_repo, "x86_64-linux", SslBackend.iguana);
+    try addGithubReleaseExe(b, github_release_step, ziget_repo, "x86_64-macos", SslBackend.iguana);
 
     const ssl_backend = zigetbuild.getSslBackend(b);
     const target = b.standardTargetOptions(.{});
